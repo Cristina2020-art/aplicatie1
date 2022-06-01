@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script language="Javascript">
+
+     
+        function check_buttons()
+                {
+                for(i=0; i<4; i++)
+                for (j=0; j<4; j++)
+        
+        {
+                if(document.form1.intr1[i].checked==true) {
+                if(document.form1.intr2[j].checked==true) {
+                document.form1.action="rezultat.php"; } } }
+                return; }
+        
+        </script>
+        
+             
+        <form name="form1" method="post" onSubmit="javascript:check_buttons();" action="">
+                1. Cate limbaje de programare cunosti?
+          <p>
+          <input type="radio" name="intr1" value="a" >
+                a. Nici unul<br>
+          <input type="radio" name="intr1" value="b" >
+                b. 1<br>
+          <input type="radio" name="intr1" value="c" >
+                c. 2<br>
+          <input type="radio" name="intr1" value="d" >
+                d. 3<br>
+        
+        </p>
+                2. De cat timp esti interesat de Web Design?
+          <p>
+          <input type="radio" name="intr2"  value="a">
+                a. De cand m-am nascut<br>
+          <input type="radio" name="intr2" value="b">
+                b. De mai mult de 10 ani<br>
+          <input type="radio" name="intr2" value="c">
+                c. De mai putin de 10 ani<br>
+          <input type="radio" name="intr2" value="d">
+                d. De Ieri<br>
+          </p>
+         
+          <input type="submit" value="Trimite formularul">
+          </form>
+           
+</body>
+</html>
